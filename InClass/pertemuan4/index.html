@@ -3,77 +3,77 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tugas Pertemuan 4</title>
+        <title>Tugas Pertemuan 4 Kode Soal 2</title>
+        <!--Librari font awesome -->
         <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <!--library CSS Bootstrap-->
         <link rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
         <link rel="stylesheet" href="styles.css">
 
     </head>
     <body>
 
         <div class="container-fluid">
+            <div class="row d-flex d-md-block flex-nowrap  wrapper ">
 
-            <div class="row">
+                <!--Tombol untuk membuka tutup sidebar-->
 
-            </main>
-            <div class="row wrapper">
-                <main class="col-md-9 col px-5 pt-2">
-                    <button
-                        class="btn btn-sm btn-light position-absolute"
-                        style="top: 10px; left: 10px; z-index: 1050;"
-                        data-toggle="collapse"
-                        data-target="#sidebar">
-                        <i class="fa fa-angle-double-left"></i>
-                    </button>
-                    <div class="col-md-3 col-1 pl-0 pr-0 collapse show"
+                <button
+                    class="btn btn-sm position-absolute" id="toggleBtn"
+                    type="button"
+                    style="top: 20px; left: 200px; z-index: 1050;"
+                    data-toggle="collapse"
+                    aria-expanded="true"
+                    aria-controls="sidebar"
+                    data-target="#sidebar">
+                    <i class="fa fa-angle-double-left icon-open"></i>
+
+                </button>
+
+                <div class="row wrapper">
+                    <div class="col-md-3 col-1 pl-0 pr-0 collapse show "
                         id="sidebar">
-                        <div class="list-group border-0">
-                            <!--Mengatur gambar admin-->
-                            <div class="admin-container">
-
+                        <!-- List menu sidebar dengnan menghilamgksn garis bawah-->
+                        <div
+                            class="list-group border-0 text-center text-md-left">
+                            <!-- Informasi Admin -->
+                            <div class="admin-container  d-flex">
                                 <img
                                     src="https://png.pngtree.com/png-vector/20240601/ourmid/pngtree-casual-man-flat-design-avatar-profile-picture-vector-png-image_12593008.png"
-                                    class="gambar-admin"
-                                    alt="Gambar Admin">
-
+                                    class="gambar-admin" alt="Gambar Admin">
                                 <div class="admin-info">
                                     <p class="admin-name">Admin</p>
                                     <p class="admin-email">admin@mail.com</p>
                                 </div>
                             </div>
+
                             <!--Menu Helplog-->
                             <!--  <i class="fas fa-clipboard-check"></i> ini font awesome-->
                             <a href="#menu1" class="list-group-item"
                                 data-toggle="collapse">
-                                <i class="fas fa-clipboard-check"></i> <span
+                                <i class="fa fa-clipboard-check"></i>
+                                <span
                                     class="d-none d-md-inline">Heperlog</span></a>
                             <div class="collapse" id="menu1">
                                 <a href="#menu1sub1" class="list-group-item"
-                                    data-toggle="collapse">Subitem 1</a>
-                                <div class="collapse" id="menu1sub1">
-                                    <a href="#" class="list-group-item">Subitem
-                                        a</a>
-                                    <a href="#" class="list-group-item">Subitem
-                                        b</a>
-                                    <a href="#menu1sub1sub1"
-                                        class="list-group-item"
-                                        data-toggle="collapse">Subitem c</a>
-                                    <div class="collapse" id="menu1sub1sub1">
-                                        <a href="#"
-                                            class="list-group-item">Subitem
-                                            c.1</a>
-                                        <a href="#"
-                                            class="list-group-item">Subitem
-                                            c.2</a>
-                                    </div>
-                                    <a href="#" class="list-group-item">Subitem
-                                        d</a>
-                                </div>
-                                <a href="#" class="list-group-item">Subitem
-                                    2</a>
+                                    data-toggle="collapse">Tanggal: 23 Maret
+                                    2025<br>
+                                    Aktivitas: Mengantar anak ke sekolah dan
+                                    menyapu halaman<br>
+                                    Durasi: 3 jam<br>
+                                    Status: Selesai</a>
+
+                                <a href="#" class="list-group-item">Tanggal: 24
+                                    Maret 2025<br>
+                                    Aktivitas: Memasak sarapan dan membersihkan
+                                    dapur<br>
+                                    Durasi: 2 jam<br>
+                                    Status: Selesai</a>
                             </div>
+
                             <!--Menu Helplfind-->
                             <a href="#menu3" class="list-group-item"
                                 data-toggle="collapse">
@@ -81,28 +81,121 @@
                                 <span
                                     class="d-none d-md-inline">Helpfind</span></a>
                             <div class="collapse" id="menu3">
-                                <a href="#" class="list-group-item">3.1</a>
-                                <a href="#menu3sub2" class="list-group-item"
-                                    data-toggle="collapse">3.2</a>
-                                <div class="collapse" id="menu3sub2">
-                                    <a href="#" class="list-group-item">3.2
-                                        a</a>
-                                    <a href="#" class="list-group-item">3.2
-                                        b</a>
-                                </div>
-                                <a href="#" class="list-group-item">3.3</a>
-                            </div>
-                        </div>
+                                <a href="#" class="list-group-item">Nama:
+                                    Siti
+                                    Aisyah <br> Keahlian: Merawat lansia <br>
+                                    Lokasi:
+                                    Surabaya <br>
+                                    Rating: 5.0</a>
 
+                                <a href="#" class="list-group-item">Nama:
+                                    Siti
+                                    Nur <br> Keahlian: Cuci baju<br>
+                                    Lokasi:
+                                    Surabaya <br>
+                                    Rating: 4.0</a>
+                            </div>
+
+                        </div>
+                        <!-- Tombol untuk logout -->
                         <button class="logout-btn">
-                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            <i class="fa-solid fa-arrow-right-to-bracket"></i>
                             Log Out
                         </button>
-
                     </div>
 
+                    <div class="main-content">
+                        <!-- Icon sidebar buat yang tanda panah  -->
+                        <!--Tombol Detail prt -->
+                        <div class="detail-prt">
+                            <button id="toggleBtn1" aria-expanded="true"
+                                class="btn btn-sm"
+                                type="button"
+                                style="top: 20px; left: 300px; z-index: 1050;"
+                                data-toggle="collapse"
+                                aria-expanded="true"
+                                aria-controls="sidebar"
+                                data-target="#sidebar">
+                                <!-- Icon saat sidebar terbuka -->
+                                <i class="fa-solid fa-arrow-left me-2">
+                                </i>
+                                <span style="font-weight: bold;">Detail
+                                    PRT</span>
+
+                            </button>
+
+                        </div>
+
+                        <div class="main-content1">
+                            <!-- Bagian gambar profil -->
+                            <div class="image-section">
+                                <img
+                                    src="img1.png"
+                                    alt="Cute.img" width="450px">
+                                <br>
+                                <br>
+                                <div class="image-sc">
+
+                                    <img
+                                        src="img2.png"
+                                        alt="cute.jpg" width="100">
+                                    <img
+                                        src="img3.png"
+                                        alt="cute.jpg" width="100">
+                                    <img
+                                        src="img4.png"
+                                        alt="cute.jpg" width="100">
+                                </div>
+                            </div>
+
+                            <div class="profile-card">
+                                <h2>Nagisa Natsumi</h2>
+                                <p class="job-title">Perawat Lansia</p>
+
+                                <!-- Info tabelnya -->
+                                <table class="info-table">
+                                    <tr>
+                                        <td>
+                                            <h3>4</h3>
+                                            <p>Tahun Pengalaman</p>
+                                        </td>
+                                        <td>
+                                            <h3><i class="far fa-star"></i>
+                                                4.6</h3>
+                                            <p> Rating </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <hr>
+
+                                <!-- Bagian biodata -->
+                                <div class="biodata-section">
+                                    <table class="biodata-table">
+                                        <tr class="biodata-header-row">
+                                            <td colspan="2"
+                                                class="biodata-header">Biodata</td>
+                                        </tr>
+                                        <tr><td>Keahlian 1</td><td>:
+                                                Memasak</td></tr>
+                                        <tr><td>Keahlian 2</td><td>: Mencuci
+                                                Baju</td></tr>
+                                        <tr><td>Keahlian 3</td><td>:
+                                                Menyetir</td></tr>
+                                        <tr><td>Keahlian 4</td><td>: -</td></tr>
+                                    </table>
+                                </div>
+
+                                <button class="edit-button">Edit Data</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
+
             </div>
+
             <script
                 src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
             <script
