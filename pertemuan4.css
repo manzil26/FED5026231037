@@ -1,91 +1,91 @@
 
 #sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    min-height: 100vh;
-    background: #2d527c;
-    color: white;
-    width: 250px; /* Lebar saat terbuka */
-    transition: width 0.3s ease; /* Efek transisi */
-   
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100vh;
+  background: #125589;
+  color: white;
+  width: 250px; /* Lebar saat terbuka */
+  transition: width 0.3s ease; /* Efek transisi */
+ 
 }
 
 
 #sidebar .list-group {
-  margin-top: 40px;
-  margin-left: 20px;
+margin-top: 40px;
+margin-left: 20px;
 
 }
 
 
 #sidebar .list-group-item {
-  border-radius: 0;
-  background: transparent;
-  color: white;
-  border-left: 0;
-  border-right: 0;
-  border: none;
-  white-space: nowrap;
+border-radius: 0;
+background: transparent;
+color: white;
+border-left: 0;
+border-right: 0;
+border: none;
+white-space: nowrap;
 }
 
 #sidebar .list-group-item:hover {
-  background: rgba(255, 255, 255, 0.1);
-  text-decoration: none;
+background: rgba(255, 255, 255, 0.1);
+text-decoration: none;
 }
 
 
 /*Main Content*/
 .main-content {
-  flex: 1; /* Mengisi ruang yang tersedia, ini misal klw di buka bisa muncul */
-  padding: 20px; /* Padding untuk konten */
+flex: 1; /* Mengisi ruang yang tersedia, ini misal klw di buka bisa muncul */
+padding: 20px; /* Padding untuk konten */
 }
 
 .main-content1{
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin-top: 40px;
-  margin-left: 40px;
-  
-  
+display: flex;
+align-items: flex-start;
+flex-wrap: wrap;
+margin-top: 40px;
+margin-left: 40px;
+
+
 }
 
 .main-content1 img{
-  border-radius: 8px;
+border-radius: 8px;
 }
 
 
 /* CSS untuk tombol Detail PRT */
 .detail-prt {
-    margin-bottom: 20px; /* Jarak dari atas */
-    margin-top: 20px;
-    margin-left: 30px;
+  margin-bottom: 20px; /* Jarak dari atas */
+  margin-top: 20px;
+  margin-left: 30px;
 }
 
 /*Isi sidebar */
 .gambar-admin {
-    width: 50px; 
-    height: 50px;
-    border-radius: 50%; 
-    margin-right: 10px;
-    margin-top: 20px;
-    margin-left: 20px;
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%; 
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .admin-info {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  
 }
 .admin-name {
-    font-weight: bold;
-    margin: 0;
+  font-weight: bold;
+  margin: 0;
 }
 .admin-email {
-    font-size: 14px;
-    margin: 0;
-    opacity: 0.8; 
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.8; 
 }
 
 
@@ -93,183 +93,186 @@
 
 /* Tombol -Tombol */
 .row wrapper {
-  position: absolute;
-  background-color: #2F4F79; 
-  color: #2F4F79;
+position: absolute;
+background-color: #125589; 
+color: #125589;
 }
 
 
 #toggleBtn[aria-expanded="false"] {
-    display: none; /* disembunyikan saat sidebar ditutup */
-     
+  /* disembunyikan saat sidebar ditutup */
+  margin-top: 25px;
+  margin-left: 10px;
+   color: white;
+   background-color: #125589;
 }
 
 #toggleBtn{
-    color: rgba(255, 255, 255, 0.869); 
+  color: rgba(255, 255, 255, 0.869); 
 }
 
 #toggleBtn1{
-    font-size: 24px;
+  font-size: 24px;
 
 }
 
 
 
 .logout-btn:hover {
-  background: rgba(255, 255, 255, 0.3);
+background: rgba(255, 255, 255, 0.3);
 }
 
 .logout-btn {
-  display: flex;
-  
-/*nentuin yg di dalam icon*/
-  align-items: center; 
-  justify-content: center;
-  gap: 8px;
+display: flex;
 
-  background-color: rgba(255, 255, 255, 0.2);
-  border: none;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 500px;
-  padding: 12px 24px;
-  margin-left: 50px;
-  
+/*nentuin yg di dalam icon*/
+align-items: center; 
+justify-content: center;
+gap: 8px;
+
+background-color: rgba(255, 255, 255, 0.2);
+border: none;
+color: white;
+font-size: 16px;
+font-weight: bold;
+padding: 10px 20px;
+border-radius: 8px;
+cursor: pointer;
+margin-top: 500px;
+padding: 12px 24px;
+margin-left: 50px;
+
 }
 
 .logout-btn i {
-  transform: rotate(180deg);
-  
+transform: rotate(180deg);
+
 }
 
 .edit-button {
-  width: 100%;
-  padding: 14px;
-  background-color: #2d527c;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  margin-top: 20px;
+width: 100%;
+padding: 14px;
+background-color: #125589;
+color: white;
+border: none;
+border-radius: 8px;
+font-size: 16px;
+cursor: pointer;
+margin-top: 20px;
 }
 
 .edit-button:hover {
-  background-color: #2563eb;
+background-color: #125589;
 }
 
 /*tentang image*/
 
 .img1 img{
-  border-radius: 8px;
+border-radius: 8px;
 
 }
 
 
 
 .image-sc img{
-   width: 150px;      /* Atur lebar tetap */
-      height: 200px;     /* Atur tinggi tetap */
-      object-fit: cover; /* Biar gambar tidak gepeng tapi tetap ter-crop rapi */
-      border-radius: 8px; /*sudut gambar melengkung */
-      box-shadow: 0 0 5px rgba(0,0,0,0.2); /* bayangan */
+ width: 150px;      
+    height: 200px;     
+    object-fit: cover; 
+    border-radius: 8px; 
+    box-shadow: 0 0 5px rgba(0,0,0,0.2); 
 
 }
 
 
 .profile-card{
-  margin-top: 20px;
-    margin-left: 50px;
+margin-top: 20px;
+  margin-left: 50px;
 }
- 
+
 .profile-card h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
+  margin-bottom: 20px;
+  font-size: 24px;
 }
-  
+
 .job-title {
-    color: #6b7280;
-    margin-bottom: 20px;
-  }
-  
+  color: #6b7280;
+  margin-bottom: 20px;
+}
 
 
-  .info-table h3 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .info-table p {
-    margin: 5px 0 0;
-    font-size: 14px;
-    color: #333;
-  }
-  
-  
-  .info-table td {
-    padding: 15px;
-    border-left: 5px solid #e5e7eb;
-  }
-  
 
-  
-  .info-table h3 {
-    margin: 0;
-    font-size: 24px;
-    color: #111827;
-  }
-  
-  .info-table i {
-    color: #efc727;
-    margin-right: 5px;
-    
-  }
+.info-table h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
 
-  .info-table {
-    width: 400px;
-    border-collapse: collapse; /*Menggabungkan garis batas (border) antara sel-sel tabel yang bersebelahan, sehingga hanya satu garis yang terlihat, bukan dua. */
-    text-align: center;
-    margin-top: 1rem;
-  }
-  
-  .info-table td {
-    border: 1px solid #ddd; /* ini garis luar antar kolom dan baris */
-    padding: 10px;
-    width: 50%;
-  }
-  
+.info-table p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #333;
+}
 
-  
-  .biodata-table {
-    width: 100%;
-    border-collapse: collapse;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  }
-  
-  
 
-  .biodata-header {
-    background-color: #e5e7eb; /* warna abu-abu */
-    font-weight: bold;
-    font-size: 50px;
-    padding: 12px 16px;
-  }
-  
-  .biodata-table td {
-    padding: 12px 16px;
-    font-size: 16px;
-  }
-  
-  
+.info-table td {
+  padding: 15px;
+  border-left: 5px solid #e5e7eb;
+}
 
+
+
+.info-table h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #111827;
+}
+
+.info-table i {
+  color: #efc727;
+  margin-right: 5px;
   
-  
+}
+
+.info-table {
+  width: 400px;
+  border-collapse: collapse; /*Menggabungkan garis batas (border) antara sel-sel tabel yang bersebelahan, sehingga hanya satu garis yang terlihat, bukan dua. */
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.info-table td {
+  border: 1px solid #ddd; /* ini garis luar antar kolom dan baris */
+  padding: 10px;
+  width: 50%;
+}
+
+
+
+.biodata-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+
+
+.biodata-header {
+  background-color: #e5e7eb; 
+  font-weight: bold;
+  font-size: 50px;
+  padding: 12px 16px;
+}
+
+.biodata-table td {
+  padding: 12px 16px;
+  font-size: 16px;
+}
+
+
+
+
+
 
 
