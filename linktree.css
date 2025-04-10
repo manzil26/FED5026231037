@@ -4,10 +4,10 @@
 }
 
 .container{
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     position: relative;
     text-align: center;
 }
@@ -23,9 +23,9 @@
 .btn i{
     
     gap: 10px;
-    right: 10px; /* Geser ikon ke kanan */
-    bottom: 57px; /* Geser ikon ke bawah */
-    font-size: 16px; /* Ukuran ikon lebih besar agar terlihat */
+    right: 10px; 
+    bottom: 57px;
+    font-size: 16px; 
 
 }
 body{
@@ -46,7 +46,8 @@ body{
     display: flex; 
     font-weight: normal;
     align-items: center;
-    gap: 120px; 
+    gap: 100px; 
+    font-size: 1.1em;
 }
 .icon-circle i{
     transform: rotate(90deg);
@@ -54,8 +55,8 @@ body{
 }
 
 .close-icon {
-    font-size: 20px; /* Menambah ukuran font dari simbol "X" */
-    color: black; /* Mengubah warna "X" menjadi hitam */
+    font-size: 20px; 
+    color: black; 
     font-weight: 1px;
   
 }
@@ -93,9 +94,6 @@ body{
 
 
 
-
-
-
 .icon-circle{
     width: 40px; /* Ukuran lingkaran */
     height: 40px;
@@ -116,13 +114,17 @@ body{
 }
 
 .jumbotron{
-    width: 580px;
-    height: 257.37px;
+   
+    display: flex;
+    flex-direction: column;
+    min-width: 580px;
+    min-height: 240px;
     background-image: url(material/linktreeimg.webp);
-    background-size: contain;
+    background-size: cover;
     overflow: hidden; 
-    text-decoration: none;
+   
     transition: width 2s, height 4s;
+   
 }
 
 
@@ -133,61 +135,33 @@ body{
 }
 
 .jumbotron p{
-    margin-top: 99px;
-    margin-bottom: 0px;
-    text-decoration: none;
-    width: calc(100% - 32px);
-    height: 48px;
+    margin-bottom: 1000px;
+    margin: 0;
+  
+    background: rgba(0, 0, 0, 0.2);
     color: rgba(255, 255, 255, 0.912);
-    overflow: hidden;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    display: flex;
-    align-items: flex-end;
-    bottom: 16px;
-    left: 16px;
-    -webkit-box-pack: center;
-    justify-content: center;
-    width: 580px; /* Ganti dengan ukuran yang kamu mau */
-    height: 100px;
-    background: rgba(0, 0, 0, 0.119);
+    font-size: 1.2rem;
+    
    
-   
+ 
 }
 
-.jumbotron i {
-    display: flex;
-    color: white;
-    gap: 10px;
-    position: absolute; /* Pastikan ikon tetap terlihat */
-    right: 10px; /* Geser ikon ke kanan */
-    bottom: 57px; /* Geser ikon ke bawah */
-    font-size: 16px; /* Ukuran ikon lebih besar agar terlihat */
-}
-
-.btn-light {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px 66px;
+  .btn-group-toggle {
     width: 580px;
     height: 64px;
-    font-size: 18px;
-    text-align: center;
-    text-decoration: none;
-    gap: 10px;
-    transition: width 2s, height 4s;
-}
-
-.btn-light:hover{
+    transition: width 0.5s ease, height 0.5s ease;
+  }
+  
+  .btn-group-toggle:hover {
     width: 598px;
     height: 65px;
-}
-
+  }
 .icon1 {
     width: 50px;
     height: 50px;
 }
+
+
 
 
 
