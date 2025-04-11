@@ -1,6 +1,4 @@
-
-
-
+//untuk icon 
 document.addEventListener("DOMContentLoaded", function () {
     var copyButton = document.getElementById("copyButton");
     var icon = document.getElementById("icon");
