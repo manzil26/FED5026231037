@@ -13,50 +13,74 @@
 
         <link rel="stylesheet" href="pertemuan4.css">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
     </head>
     <body>
 
         <div class="container-fluid">
-            <div class="row d-flex d-md-block flex-nowrap  wrapper ">
-
-                <!--Tombol untuk membuka tutup sidebar-->
+            <div class="row d-flex d-md-block flex-nowrap ">
 
                 <button
-                    class="btn btn-sm position-absolute" id="toggleBtn"
+                    class="btn"
+                    id="toggleBtn"
                     type="button"
-                    style="top: 20px; left: 200px; z-index: 1050;"
+                    style="z-index: 1030; position: absolute; text-decoration: none; left: 19px; margin-top: 45px; transition: 0.1s; outline: none; box-shadow: none;"
                     data-toggle="collapse"
                     aria-expanded="true"
                     aria-controls="sidebar"
                     data-target="#sidebar">
-                    <i class="fa fa-angle-double-left icon-open"></i>
-
+                    <!-- Icon untuk tertutup -->
+                    <i class="fa fa-bars icon-closed"></i>
                 </button>
 
+                <!--Tombol untuk membuka tutup sidebar-->
+
                 <div class="row wrapper">
+
                     <div class="col-md-3 col-1 pl-0 pr-0 collapse show "
-                        id="sidebar">
+                        id="sidebar" style="color: #e0e2d9;">
                         <!-- List menu sidebar dengnan menghilamgksn garis bawah-->
                         <div
                             class="list-group border-0 text-center text-md-left">
+                            <!-- Tombol toggle -->
+                            <button
+                                class="btn btn-sm position-absolute"
+                                id="toggleBtn"
+                                type="button"
+                                style="color: #e0e2d9;;top: 20px; left: 200px; z-index: 1050; box-shadow: none; "
+                                data-toggle="collapse"
+                                data-target="#sidebar"
+                                aria-expanded="true"
+                                aria-controls="sidebar">
+                                <i
+                                    class="fas fa-angle-double-left icon-open"></i>
+
+                            </button>
                             <!-- Informasi Admin -->
                             <div class="admin-container  d-flex">
                                 <img
-                                    src="https://png.pngtree.com/png-vector/20240601/ourmid/pngtree-casual-man-flat-design-avatar-profile-picture-vector-png-image_12593008.png"
+                                    src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrwi7c6dO22VVPgMnbBU9VHmplzdp6Ufb4kL42iBji8BrggFxP"
                                     class="gambar-admin" alt="Gambar Admin">
                                 <div class="admin-info">
-                                    <p class="admin-name">Admin</p>
-                                    <p class="admin-email">admin@mail.com</p>
+                                    <p class="admin-name"
+                                        style="color: #e0e2d9; font-family: 'Inter', sans-serif;">Admin</p>
+                                    <p class="admin-email"
+                                        style="color: #e0e2d9; font-family: 'Inter', sans-serif;">admin@mail.com</p>
                                 </div>
                             </div>
 
                             <!--Menu Helplog-->
                             <!--  <i class="fas fa-clipboard-check"></i> ini font awesome-->
                             <a href="#menu1" class="list-group-item"
-                                data-toggle="collapse">
+                                data-toggle="collapse" style="color: #e0e2d9;">
                                 <i class="fa fa-clipboard-check"></i>
                                 <span
-                                    class="d-none d-md-inline">Heperlog</span></a>
+                                    class="d-none d-md-inline"
+                                    style="font-family: 'Poppins', sans-serif;">Heperlog</span></a>
                             <div class="collapse" id="menu1">
                                 <a href="#menu1sub1" class="list-group-item"
                                     data-toggle="collapse">Tanggal: 23 Maret
@@ -79,7 +103,8 @@
                                 data-toggle="collapse">
                                 <i class="fas fa-search"></i>
                                 <span
-                                    class="d-none d-md-inline">Helpfind</span></a>
+                                    class="d-none d-md-inline"
+                                    style="color: #e0e2d9;">Helpfind</span></a>
                             <div class="collapse" id="menu3">
                                 <a href="#" class="list-group-item">Nama:
                                     Siti
@@ -98,7 +123,8 @@
 
                         </div>
                         <!-- Tombol untuk logout -->
-                        <button class="logout-btn">
+                        <button class="logout-btn"
+                            style="color: #e0e2d9;font-family: 'Poppins', sans-serif;">
                             <i class="fa-solid fa-arrow-right-to-bracket"></i>
                             Log Out
                         </button>
@@ -111,7 +137,7 @@
                             <button id="toggleBtn1" aria-expanded="true"
                                 class="btn btn-sm"
                                 type="button"
-                                style="top: 20px; left: 300px; z-index: 1050;"
+                                style="top: 20px; left: 300px; z-index: 1050; outline: none; box-shadow: none;"
                                 data-toggle="collapse"
                                 data-target="#sidebar"
                                 aria-controls="sidebar"
@@ -145,7 +171,8 @@
                                 </div>
                             </div>
 
-                            <div class="profile-card">
+                            <div class="profile-card"
+                                style="font-family: 'Poppins', sans-serif;">
                                 <h2>Nagisa Natsumi</h2>
                                 <p class="job-title">Perawat Lansia</p>
 

@@ -6,7 +6,7 @@
   background: #125589;
   color: white;
   width: 250px; /* Lebar saat terbuka */
-  transition: width 0.3s ease; /* Efek transisi */
+  transition: width 0.1s ; /* Efek transisi */
  
 }
 
@@ -26,6 +26,7 @@ border-left: 0;
 border-right: 0;
 border: none;
 white-space: nowrap;
+font-family: 'Poppins', sans-serif;
 }
 
 #sidebar .list-group-item:hover {
@@ -59,7 +60,7 @@ border-radius: 8px;
 .detail-prt {
   margin-bottom: 20px; /* Jarak dari atas */
   margin-top: 20px;
-  margin-left: 30px;
+  margin-left: 45px;
 }
 
 /*Isi sidebar */
@@ -71,6 +72,7 @@ border-radius: 8px;
   margin-top: 20px;
   margin-left: 20px;
 }
+
 
 .admin-info {
   display: flex;
@@ -89,22 +91,18 @@ border-radius: 8px;
 }
 
 
-
-
-/* Tombol -Tombol */
-.row wrapper {
-position: absolute;
-background-color: #125589; 
-color: #125589;
+#toggleBtn[aria-expanded="true"] .icon-open {
+  display: inline;
 }
-
-
-#toggleBtn[aria-expanded="false"] {
-  /* disembunyikan saat sidebar ditutup */
-  margin-top: 25px;
-  margin-left: 10px;
-   color: white;
-   background-color: #125589;
+#toggleBtn[aria-expanded="true"] .icon-closed {
+  display: none;
+}
+#toggleBtn[aria-expanded="false"] .icon-open {
+  display: none;
+}
+#toggleBtn[aria-expanded="false"] .icon-closed {
+  display: inline;
+  color: #111827;
 }
 
 #toggleBtn{
